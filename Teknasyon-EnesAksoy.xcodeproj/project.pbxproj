@@ -21,6 +21,13 @@
 		8F21CBFF25D941CA0061F17E /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CBFE25D941CA0061F17E /* ResultModel.swift */; };
 		8F21CC0225D942560061F17E /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */; };
 		8F21CC0425D942760061F17E /* ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC0325D942760061F17E /* ObjectStore.swift */; };
+		8F21CC0925D942D50061F17E /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC0725D942D50061F17E /* ListTableViewCell.swift */; };
+		8F21CC0A25D942D50061F17E /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC0825D942D50061F17E /* ListTableViewCell.xib */; };
+		8F21CC1525D943CE0061F17E /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC1425D943CE0061F17E /* SliderView.swift */; };
+		8F21CC1725D943E60061F17E /* SliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC1625D943E60061F17E /* SliderView.xib */; };
+		8F21CC1A25D944100061F17E /* ListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC1925D944100061F17E /* ListScreenViewController.swift */; };
+		8F21CC1D25D944300061F17E /* ListScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC1C25D944300061F17E /* ListScreenViewModel.swift */; };
+		8F21CC1F25D9444C0061F17E /* ListScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC1E25D9444C0061F17E /* ListScreen.storyboard */; };
 		8F21CC3325D946250061F17E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC3225D946250061F17E /* LoadingView.swift */; };
 		8F21CC4525D948210061F17E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC4425D948210061F17E /* Localizable.strings */; };
 		8F21CC4725D972DA0061F17E /* TeknasyonNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */; };
@@ -45,6 +52,13 @@
 		8F21CBFE25D941CA0061F17E /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		8F21CC0325D942760061F17E /* ObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStore.swift; sourceTree = "<group>"; };
+		8F21CC0725D942D50061F17E /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		8F21CC0825D942D50061F17E /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		8F21CC1425D943CE0061F17E /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		8F21CC1625D943E60061F17E /* SliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderView.xib; sourceTree = "<group>"; };
+		8F21CC1925D944100061F17E /* ListScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenViewController.swift; sourceTree = "<group>"; };
+		8F21CC1C25D944300061F17E /* ListScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenViewModel.swift; sourceTree = "<group>"; };
+		8F21CC1E25D9444C0061F17E /* ListScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListScreen.storyboard; sourceTree = "<group>"; };
 		8F21CC3225D946250061F17E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8F21CC4425D948210061F17E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeknasyonNavigationItem.swift; sourceTree = "<group>"; };
@@ -147,6 +161,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8F21CBEA25D93FB60061F17E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC0525D942AA0061F17E /* ListScreen */,
+				8F21CBED25D9404E0061F17E /* SplashScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		8F21CBEB25D93FBC0061F17E /* WebService */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +237,52 @@
 				8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F21CC0525D942AA0061F17E /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC0625D942B10061F17E /* Cell */,
+				8F21CC0F25D943320061F17E /* View */,
+				8F21CC1825D944000061F17E /* ViewController */,
+				8F21CC1B25D944230061F17E /* ViewModel */,
+				8F21CC1E25D9444C0061F17E /* ListScreen.storyboard */,
+			);
+			path = ListScreen;
+			sourceTree = "<group>";
+		};
+		8F21CC0625D942B10061F17E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC0725D942D50061F17E /* ListTableViewCell.swift */,
+				8F21CC0825D942D50061F17E /* ListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8F21CC0F25D943320061F17E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC1425D943CE0061F17E /* SliderView.swift */,
+				8F21CC1625D943E60061F17E /* SliderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F21CC1825D944000061F17E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC1925D944100061F17E /* ListScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8F21CC1B25D944230061F17E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC1C25D944300061F17E /* ListScreenViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8F21CC3125D946120061F17E /* Loader */ = {
@@ -311,8 +380,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F21CC4525D948210061F17E /* Localizable.strings in Resources */,
+				8F21CC1F25D9444C0061F17E /* ListScreen.storyboard in Resources */,
 				8F21CBDE25D93BE10061F17E /* LaunchScreen.storyboard in Resources */,
+				8F21CC0A25D942D50061F17E /* ListTableViewCell.xib in Resources */,
 				8F21CBF225D9407A0061F17E /* SplashScreen.storyboard in Resources */,
+				8F21CC1725D943E60061F17E /* SliderView.xib in Resources */,
+				8F21CC2525D944FE0061F17E /* SimilarMoviesCollectionViewCell.xib in Resources */,
 				8F21CBDB25D93BE10061F17E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,16 +439,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F21CC0925D942D50061F17E /* ListTableViewCell.swift in Sources */,
 				8F21CBFA25D941940061F17E /* APIService.swift in Sources */,
 				8F21CC0225D942560061F17E /* UIViewControllerExtensions.swift in Sources */,
 				8F21CBFF25D941CA0061F17E /* ResultModel.swift in Sources */,
 				8F21CBD225D93BDF0061F17E /* AppDelegate.swift in Sources */,
 				8F21CC3325D946250061F17E /* LoadingView.swift in Sources */,
+				8F21CBF425D9410B0061F17E /* SplashScreenViewController.swift in Sources */,
 				8F21CBD425D93BDF0061F17E /* SceneDelegate.swift in Sources */,
 				8F21CC0425D942760061F17E /* ObjectStore.swift in Sources */,
+				8F21CC1A25D944100061F17E /* ListScreenViewController.swift in Sources */,
+				8F21CBF625D9415B0061F17E /* SplashScreenViewModelDelegate.swift in Sources */,
+				8F21CC1D25D944300061F17E /* ListScreenViewModel.swift in Sources */,
 				8F21CC4725D972DA0061F17E /* TeknasyonNavigationItem.swift in Sources */,
 				8F21CBFD25D941B70061F17E /* ResponseModel.swift in Sources */,
 				8F21CBF825D941740061F17E /* SplashScreenViewModel.swift in Sources */,
+				8F21CC1525D943CE0061F17E /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

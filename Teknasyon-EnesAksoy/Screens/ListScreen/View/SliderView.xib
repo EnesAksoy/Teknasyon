@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1rn-qx-KES" customClass="SliderView" customModule="Teknasyon_EnesAksoy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="493" height="357"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSj-pc-3LJ">
+                    <rect key="frame" x="0.0" y="44" width="493" height="279"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygx-9P-mwC">
+                            <rect key="frame" x="0.0" y="0.0" width="493" height="279"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVY-g8-mK4">
+                            <rect key="frame" x="5" y="238.5" width="483" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ygx-9P-mwC" firstAttribute="top" secondItem="xSj-pc-3LJ" secondAttribute="top" id="68N-81-7ao"/>
+                        <constraint firstAttribute="trailing" secondItem="ygx-9P-mwC" secondAttribute="trailing" id="6kH-FX-BeE"/>
+                        <constraint firstAttribute="bottom" secondItem="bVY-g8-mK4" secondAttribute="bottom" constant="20" id="BtT-vP-Sw0"/>
+                        <constraint firstAttribute="bottom" secondItem="ygx-9P-mwC" secondAttribute="bottom" id="XjF-2r-k7x"/>
+                        <constraint firstItem="bVY-g8-mK4" firstAttribute="leading" secondItem="xSj-pc-3LJ" secondAttribute="leading" constant="5" id="bgs-VE-r9M"/>
+                        <constraint firstAttribute="trailing" secondItem="bVY-g8-mK4" secondAttribute="trailing" constant="5" id="guT-on-acx"/>
+                        <constraint firstItem="ygx-9P-mwC" firstAttribute="leading" secondItem="xSj-pc-3LJ" secondAttribute="leading" id="ivf-8s-JZ3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ElA-k7-4rl" firstAttribute="trailing" secondItem="xSj-pc-3LJ" secondAttribute="trailing" id="8c1-op-UMW"/>
+                <constraint firstItem="ElA-k7-4rl" firstAttribute="bottom" secondItem="xSj-pc-3LJ" secondAttribute="bottom" id="QTQ-8a-I2U"/>
+                <constraint firstItem="xSj-pc-3LJ" firstAttribute="leading" secondItem="ElA-k7-4rl" secondAttribute="leading" id="Sp8-Oo-2nP"/>
+                <constraint firstItem="xSj-pc-3LJ" firstAttribute="top" secondItem="ElA-k7-4rl" secondAttribute="top" id="ef3-eP-obl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ElA-k7-4rl"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="bVY-g8-mK4" id="72X-mJ-KLe"/>
+                <outlet property="imageView" destination="ygx-9P-mwC" id="DCD-8w-vC5"/>
+            </connections>
+            <point key="canvasLocation" x="143.19999999999999" y="-110.19490254872565"/>
+        </view>
+    </objects>
+</document>

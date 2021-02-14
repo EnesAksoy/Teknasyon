@@ -16,6 +16,7 @@
 		8F21CBF425D9410B0061F17E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CBF325D9410B0061F17E /* SplashScreenViewController.swift */; };
 		8F21CBF625D9415B0061F17E /* SplashScreenViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CBF525D9415B0061F17E /* SplashScreenViewModelDelegate.swift */; };
 		8F21CBF825D941740061F17E /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CBF725D941740061F17E /* SplashScreenViewModel.swift */; };
+		8F21CC0225D942560061F17E /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8F21CBF325D9410B0061F17E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		8F21CBF525D9415B0061F17E /* SplashScreenViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModelDelegate.swift; sourceTree = "<group>"; };
 		8F21CBF725D941740061F17E /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		8F21CBE625D93F9D0061F17E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC0025D942480061F17E /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		8F21CBEC25D93FCA0061F17E /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,14 @@
 				8F21CBF725D941740061F17E /* SplashScreenViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F21CC0025D942480061F17E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AC39B88253FBD7CA32063F67 /* Pods */ = {
@@ -266,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F21CC0225D942560061F17E /* UIViewControllerExtensions.swift in Sources */,
 				8F21CBD225D93BDF0061F17E /* AppDelegate.swift in Sources */,
 				8F21CBD425D93BDF0061F17E /* SceneDelegate.swift in Sources */,
 				8F21CBF825D941740061F17E /* SplashScreenViewModel.swift in Sources */,

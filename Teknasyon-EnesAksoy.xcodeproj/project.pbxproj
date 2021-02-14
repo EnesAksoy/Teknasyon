@@ -21,6 +21,7 @@
 		8F21CC0225D942560061F17E /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */; };
 		8F21CC0425D942760061F17E /* ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC0325D942760061F17E /* ObjectStore.swift */; };
 		8F21CC3325D946250061F17E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC3225D946250061F17E /* LoadingView.swift */; };
+		8F21CC4525D948210061F17E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC4425D948210061F17E /* Localizable.strings */; };
 		8F21CC4725D972DA0061F17E /* TeknasyonNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		8F21CC0325D942760061F17E /* ObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStore.swift; sourceTree = "<group>"; };
 		8F21CC3225D946250061F17E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8F21CC4425D948210061F17E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeknasyonNavigationItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,14 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
+		8F21CBE925D93FAE0061F17E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC4325D948110061F17E /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8F21CBEC25D93FCA0061F17E /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +222,14 @@
 			path = Controls;
 			sourceTree = "<group>";
 		};
+		8F21CC4325D948110061F17E /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC4425D948210061F17E /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		AC39B88253FBD7CA32063F67 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F21CC4525D948210061F17E /* Localizable.strings in Resources */,
 				8F21CBDE25D93BE10061F17E /* LaunchScreen.storyboard in Resources */,
 				8F21CBF225D9407A0061F17E /* SplashScreen.storyboard in Resources */,
 				8F21CBDB25D93BE10061F17E /* Assets.xcassets in Resources */,

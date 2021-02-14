@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,12 @@
 		8F21CC1A25D944100061F17E /* ListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC1925D944100061F17E /* ListScreenViewController.swift */; };
 		8F21CC1D25D944300061F17E /* ListScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC1C25D944300061F17E /* ListScreenViewModel.swift */; };
 		8F21CC1F25D9444C0061F17E /* ListScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC1E25D9444C0061F17E /* ListScreen.storyboard */; };
+		8F21CC2425D944FE0061F17E /* SimilarMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC2225D944FE0061F17E /* SimilarMoviesCollectionViewCell.swift */; };
+		8F21CC2525D944FE0061F17E /* SimilarMoviesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC2325D944FE0061F17E /* SimilarMoviesCollectionViewCell.xib */; };
+		8F21CC2825D945630061F17E /* MovieDetailViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC2725D945630061F17E /* MovieDetailViewModelDelegate.swift */; };
+		8F21CC2B25D945850061F17E /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC2A25D945850061F17E /* MovieDetailViewController.swift */; };
+		8F21CC2E25D945A70061F17E /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC2D25D945A70061F17E /* MovieDetailViewModel.swift */; };
+		8F21CC3025D945C00061F17E /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC2F25D945C00061F17E /* MovieDetailViewController.xib */; };
 		8F21CC3325D946250061F17E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC3225D946250061F17E /* LoadingView.swift */; };
 		8F21CC4525D948210061F17E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC4425D948210061F17E /* Localizable.strings */; };
 		8F21CC4725D972DA0061F17E /* TeknasyonNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */; };
@@ -59,7 +65,14 @@
 		8F21CC1925D944100061F17E /* ListScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenViewController.swift; sourceTree = "<group>"; };
 		8F21CC1C25D944300061F17E /* ListScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenViewModel.swift; sourceTree = "<group>"; };
 		8F21CC1E25D9444C0061F17E /* ListScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListScreen.storyboard; sourceTree = "<group>"; };
+		8F21CC2225D944FE0061F17E /* SimilarMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F21CC2325D944FE0061F17E /* SimilarMoviesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimilarMoviesCollectionViewCell.xib; sourceTree = "<group>"; };
+		8F21CC2725D945630061F17E /* MovieDetailViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModelDelegate.swift; sourceTree = "<group>"; };
+		8F21CC2A25D945850061F17E /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		8F21CC2D25D945A70061F17E /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		8F21CC2F25D945C00061F17E /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		8F21CC3225D946250061F17E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8F21CC3A25D947410061F17E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8F21CC4425D948210061F17E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeknasyonNavigationItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +92,7 @@
 		73D3084FA454827D3171576E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F21CC3A25D947410061F17E /* WebKit.framework */,
 				5A63861A71FAF7A196B9C173 /* Pods_Teknasyon_EnesAksoy.framework */,
 			);
 			name = Frameworks;
@@ -164,6 +178,7 @@
 		8F21CBEA25D93FB60061F17E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8F21CC2025D944DB0061F17E /* MovieDetailScreen */,
 				8F21CC0525D942AA0061F17E /* ListScreen */,
 				8F21CBED25D9404E0061F17E /* SplashScreen */,
 			);
@@ -285,6 +300,51 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		8F21CC2025D944DB0061F17E /* MovieDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC2C25D9459C0061F17E /* ViewModel */,
+				8F21CC2925D945710061F17E /* ViewController */,
+				8F21CC2625D945560061F17E /* Protocol */,
+				8F21CC2125D944E10061F17E /* Cell */,
+				8F21CC2F25D945C00061F17E /* MovieDetailViewController.xib */,
+			);
+			path = MovieDetailScreen;
+			sourceTree = "<group>";
+		};
+		8F21CC2125D944E10061F17E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC2225D944FE0061F17E /* SimilarMoviesCollectionViewCell.swift */,
+				8F21CC2325D944FE0061F17E /* SimilarMoviesCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8F21CC2625D945560061F17E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC2725D945630061F17E /* MovieDetailViewModelDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		8F21CC2925D945710061F17E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC2A25D945850061F17E /* MovieDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8F21CC2C25D9459C0061F17E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC2D25D945A70061F17E /* MovieDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8F21CC3125D946120061F17E /* Loader */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,7 +375,6 @@
 				19FEC6A65FD21795B5FAC6FE /* Pods-Teknasyon-EnesAksoy.debug.xcconfig */,
 				438CBC109EC19A28F44654AC /* Pods-Teknasyon-EnesAksoy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -379,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F21CC3025D945C00061F17E /* MovieDetailViewController.xib in Resources */,
 				8F21CC4525D948210061F17E /* Localizable.strings in Resources */,
 				8F21CC1F25D9444C0061F17E /* ListScreen.storyboard in Resources */,
 				8F21CBDE25D93BE10061F17E /* LaunchScreen.storyboard in Resources */,
@@ -445,13 +505,17 @@
 				8F21CBFF25D941CA0061F17E /* ResultModel.swift in Sources */,
 				8F21CBD225D93BDF0061F17E /* AppDelegate.swift in Sources */,
 				8F21CC3325D946250061F17E /* LoadingView.swift in Sources */,
+				8F21CC2425D944FE0061F17E /* SimilarMoviesCollectionViewCell.swift in Sources */,
 				8F21CBF425D9410B0061F17E /* SplashScreenViewController.swift in Sources */,
 				8F21CBD425D93BDF0061F17E /* SceneDelegate.swift in Sources */,
 				8F21CC0425D942760061F17E /* ObjectStore.swift in Sources */,
+				8F21CC2825D945630061F17E /* MovieDetailViewModelDelegate.swift in Sources */,
 				8F21CC1A25D944100061F17E /* ListScreenViewController.swift in Sources */,
 				8F21CBF625D9415B0061F17E /* SplashScreenViewModelDelegate.swift in Sources */,
+				8F21CC2B25D945850061F17E /* MovieDetailViewController.swift in Sources */,
 				8F21CC1D25D944300061F17E /* ListScreenViewModel.swift in Sources */,
 				8F21CC4725D972DA0061F17E /* TeknasyonNavigationItem.swift in Sources */,
+				8F21CC2E25D945A70061F17E /* MovieDetailViewModel.swift in Sources */,
 				8F21CBFD25D941B70061F17E /* ResponseModel.swift in Sources */,
 				8F21CBF825D941740061F17E /* SplashScreenViewModel.swift in Sources */,
 				8F21CC1525D943CE0061F17E /* SliderView.swift in Sources */,

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SimilarMoviesCollectionViewCell" id="7Hd-Se-okZ" customClass="SimilarMoviesCollectionViewCell" customModule="Teknasyon_EnesAksoy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="148"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihv-If-Jag">
+                        <rect key="frame" x="0.0" y="0.0" width="95" height="148"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qqR-Ji-M2l">
+                                <rect key="frame" x="17.5" y="3" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ZYp-lM-nSI"/>
+                                    <constraint firstAttribute="height" constant="60" id="rZx-3X-6Pe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCw-FQ-Njm">
+                                <rect key="frame" x="2" y="66" width="91" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(2019)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32j-4E-JoX">
+                                <rect key="frame" x="2" y="85" width="91" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qqR-Ji-M2l" firstAttribute="top" secondItem="Ihv-If-Jag" secondAttribute="top" constant="3" id="4X2-Yk-5OQ"/>
+                            <constraint firstItem="32j-4E-JoX" firstAttribute="top" secondItem="FCw-FQ-Njm" secondAttribute="bottom" constant="2" id="5fC-SM-Vpq"/>
+                            <constraint firstAttribute="trailing" secondItem="32j-4E-JoX" secondAttribute="trailing" constant="2" id="7ga-CC-jkn"/>
+                            <constraint firstItem="FCw-FQ-Njm" firstAttribute="leading" secondItem="Ihv-If-Jag" secondAttribute="leading" constant="2" id="Odp-4n-ZlH"/>
+                            <constraint firstAttribute="trailing" secondItem="FCw-FQ-Njm" secondAttribute="trailing" constant="2" id="WAO-lQ-np4"/>
+                            <constraint firstItem="32j-4E-JoX" firstAttribute="leading" secondItem="Ihv-If-Jag" secondAttribute="leading" constant="2" id="efP-jQ-Ix4"/>
+                            <constraint firstItem="FCw-FQ-Njm" firstAttribute="top" secondItem="qqR-Ji-M2l" secondAttribute="bottom" constant="3" id="kI3-ru-Kk6"/>
+                            <constraint firstItem="qqR-Ji-M2l" firstAttribute="centerX" secondItem="Ihv-If-Jag" secondAttribute="centerX" id="qEr-ER-u3l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Ihv-If-Jag" firstAttribute="top" secondItem="7Hd-Se-okZ" secondAttribute="top" id="1uL-Tq-qwe"/>
+                <constraint firstAttribute="trailing" secondItem="Ihv-If-Jag" secondAttribute="trailing" id="Out-yz-QGa"/>
+                <constraint firstAttribute="bottom" secondItem="Ihv-If-Jag" secondAttribute="bottom" id="duo-zU-wWK"/>
+                <constraint firstItem="Ihv-If-Jag" firstAttribute="leading" secondItem="7Hd-Se-okZ" secondAttribute="leading" id="fRC-QL-mdJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ntX-Mu-zBp"/>
+            <size key="customSize" width="95" height="148"/>
+            <connections>
+                <outlet property="movieTitle" destination="FCw-FQ-Njm" id="eMx-ck-O7I"/>
+                <outlet property="posterImage" destination="qqR-Ji-M2l" id="elB-9B-8Ig"/>
+                <outlet property="yearLabel" destination="32j-4E-JoX" id="uyo-9v-GuR"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="53.571428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

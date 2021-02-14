@@ -21,6 +21,7 @@
 		8F21CC0225D942560061F17E /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */; };
 		8F21CC0425D942760061F17E /* ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC0325D942760061F17E /* ObjectStore.swift */; };
 		8F21CC3325D946250061F17E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC3225D946250061F17E /* LoadingView.swift */; };
+		8F21CC4725D972DA0061F17E /* TeknasyonNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		8F21CC0125D942560061F17E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		8F21CC0325D942760061F17E /* ObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStore.swift; sourceTree = "<group>"; };
 		8F21CC3225D946250061F17E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeknasyonNavigationItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,14 @@
 			path = ObjectStore;
 			sourceTree = "<group>";
 		};
+		8F21CBE825D93FA80061F17E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC3C25D947980061F17E /* Controls */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		8F21CBEC25D93FCA0061F17E /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,14 @@
 				8F21CC3225D946250061F17E /* LoadingView.swift */,
 			);
 			path = Loader;
+			sourceTree = "<group>";
+		};
+		8F21CC3C25D947980061F17E /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 		AC39B88253FBD7CA32063F67 /* Pods */ = {
@@ -325,6 +343,7 @@
 				8F21CC3325D946250061F17E /* LoadingView.swift in Sources */,
 				8F21CBD425D93BDF0061F17E /* SceneDelegate.swift in Sources */,
 				8F21CC0425D942760061F17E /* ObjectStore.swift in Sources */,
+				8F21CC4725D972DA0061F17E /* TeknasyonNavigationItem.swift in Sources */,
 				8F21CBFD25D941B70061F17E /* ResponseModel.swift in Sources */,
 				8F21CBF825D941740061F17E /* SplashScreenViewModel.swift in Sources */,
 			);

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7593FF56389C481D03032279 /* Pods_Teknasyon_EnesAksoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A63861A71FAF7A196B9C173 /* Pods_Teknasyon_EnesAksoy.framework */; };
 		8F21CBD225D93BDF0061F17E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CBD125D93BDF0061F17E /* AppDelegate.swift */; };
 		8F21CBD425D93BDF0061F17E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CBD325D93BDF0061F17E /* SceneDelegate.swift */; };
 		8F21CBD625D93BDF0061F17E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CBD525D93BDF0061F17E /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19FEC6A65FD21795B5FAC6FE /* Pods-Teknasyon-EnesAksoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teknasyon-EnesAksoy.debug.xcconfig"; path = "Target Support Files/Pods-Teknasyon-EnesAksoy/Pods-Teknasyon-EnesAksoy.debug.xcconfig"; sourceTree = "<group>"; };
+		438CBC109EC19A28F44654AC /* Pods-Teknasyon-EnesAksoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teknasyon-EnesAksoy.release.xcconfig"; path = "Target Support Files/Pods-Teknasyon-EnesAksoy/Pods-Teknasyon-EnesAksoy.release.xcconfig"; sourceTree = "<group>"; };
+		5A63861A71FAF7A196B9C173 /* Pods_Teknasyon_EnesAksoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teknasyon_EnesAksoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F21CBCE25D93BDF0061F17E /* Teknasyon-EnesAksoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Teknasyon-EnesAksoy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F21CBD125D93BDF0061F17E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F21CBD325D93BDF0061F17E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7593FF56389C481D03032279 /* Pods_Teknasyon_EnesAksoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73D3084FA454827D3171576E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A63861A71FAF7A196B9C173 /* Pods_Teknasyon_EnesAksoy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F21CBC525D93BDF0061F17E = {
 			isa = PBXGroup;
 			children = (
 				8F21CBD025D93BDF0061F17E /* Teknasyon-EnesAksoy */,
 				8F21CBCF25D93BDF0061F17E /* Products */,
+				AC39B88253FBD7CA32063F67 /* Pods */,
+				73D3084FA454827D3171576E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Teknasyon-EnesAksoy";
 			sourceTree = "<group>";
 		};
+		AC39B88253FBD7CA32063F67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19FEC6A65FD21795B5FAC6FE /* Pods-Teknasyon-EnesAksoy.debug.xcconfig */,
+				438CBC109EC19A28F44654AC /* Pods-Teknasyon-EnesAksoy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F21CBE225D93BE10061F17E /* Build configuration list for PBXNativeTarget "Teknasyon-EnesAksoy" */;
 			buildPhases = (
+				E5B6611FD5EAD8774C90E8BB /* [CP] Check Pods Manifest.lock */,
 				8F21CBCA25D93BDF0061F17E /* Sources */,
 				8F21CBCB25D93BDF0061F17E /* Frameworks */,
 				8F21CBCC25D93BDF0061F17E /* Resources */,
+				F216360E56D0D01A78F0ADAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E5B6611FD5EAD8774C90E8BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teknasyon-EnesAksoy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F216360E56D0D01A78F0ADAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Teknasyon-EnesAksoy/Pods-Teknasyon-EnesAksoy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Teknasyon-EnesAksoy/Pods-Teknasyon-EnesAksoy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Teknasyon-EnesAksoy/Pods-Teknasyon-EnesAksoy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F21CBCA25D93BDF0061F17E /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		8F21CBE325D93BE10061F17E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19FEC6A65FD21795B5FAC6FE /* Pods-Teknasyon-EnesAksoy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -301,6 +371,7 @@
 		};
 		8F21CBE425D93BE10061F17E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438CBC109EC19A28F44654AC /* Pods-Teknasyon-EnesAksoy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

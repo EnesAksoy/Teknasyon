@@ -20,6 +20,14 @@ struct ResultModel: Codable {
     let name: String?
     
     private enum CodingKeys: String, CodingKey {
-        case title, overview, id, backdropPath = "backdrop_path", posterPath = "poster_path", releaseDate = "release_date", starCount = "vote_average", imdbId = "imdb_id", name
+        case title
+        case overview
+        case id
+        case backdropPath = "backdrop_path"
+        case posterPath = "poster_path"
+        case releaseDate = "release_date"
+        case starCount = "vote_average"
+        case imdbId = "imdb_id"
+        case name
     }
 }

@@ -12,12 +12,10 @@ import Kingfisher
 class ListTableViewCell: UITableViewCell {
     
     // MARK: - Constans
-    
     private let posterBaseUrl = "https://image.tmdb.org/t/p/w500"
     private let imageCornerRadius: CGFloat = 6
     
     // MARK: - Outlets
-    
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var starCountLabel: UILabel!
     @IBOutlet private weak var imagePoster: UIImageView! {
@@ -27,7 +25,6 @@ class ListTableViewCell: UITableViewCell {
     }
     
     // MARK: - Configure Cell Method
-    
     func configureCell(posterUrl: String, title: String, starCount: String) {
         let posterUrl = URL(string: "\(self.posterBaseUrl)\(posterUrl)")
         self.imagePoster.kf.indicatorType = .activity
@@ -35,5 +32,4 @@ class ListTableViewCell: UITableViewCell {
         self.titleLabel.text = title
         self.starCountLabel.text = starCount
     }
-    
 }

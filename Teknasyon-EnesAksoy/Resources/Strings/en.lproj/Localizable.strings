@@ -7,11 +7,9 @@
 */
 
 /* General */
-
 "MessageTitle1" = "ERROR";
 "AlertButtonTitle" = "OK";
 
 /* ListScreen */
-
 "listScreen.title" = "Popular Movies";
 

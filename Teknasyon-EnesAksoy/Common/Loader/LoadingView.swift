@@ -11,7 +11,6 @@ import UIKit
 class LoadingView {
     
     // MARK: - Show Loading Method
-    
     static func showLoadingView() {
         removeLoadingView()
         let mainView = UIView(frame: UIScreen.main.bounds)
@@ -33,7 +32,6 @@ class LoadingView {
     }
     
     // MARK: - Remove Loading Method
-    
     static func removeLoadingView() {
         DispatchQueue.main.async {
             (UIApplication.shared.delegate as? AppDelegate)?.window?.viewWithTag(1991)?.removeFromSuperview()

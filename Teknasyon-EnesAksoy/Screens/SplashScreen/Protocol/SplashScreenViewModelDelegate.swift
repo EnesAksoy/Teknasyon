@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SplashScreenViewModelDelegate {
+protocol SplashScreenViewModelDelegate: AnyObject {
     func updateView(nowPlayingData: ResponseModel?, popularData: ResponseModel?, errorText: String)
 }

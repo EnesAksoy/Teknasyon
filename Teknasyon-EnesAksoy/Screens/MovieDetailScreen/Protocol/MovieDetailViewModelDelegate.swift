@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol MovieDetailViewModelDelegate {
+protocol MovieDetailViewModelDelegate: AnyObject {
     func updateView(movieDetailResponse: ResultModel?, errorText: String)
 }

@@ -11,16 +11,13 @@ import UIKit
 class SplashScreenViewController: UIViewController {
     
     // MARK: - Constants
-    
     private let errorKey = "MessageTitle1"
     private let storyboardName = "ListScreen"
     
     // MARK: - Properties
-    
     private var viewModel: SplashScreenViewModel!
 
     // MARK: - Life Cycles
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = SplashScreenViewModel()
@@ -29,7 +26,6 @@ class SplashScreenViewController: UIViewController {
 }
 
 // MARK: - Delegate Method
-
 extension SplashScreenViewController: SplashScreenViewModelDelegate {
     func updateView(nowPlayingData: ResponseModel?, popularData: ResponseModel?, errorText: String) {
         if !errorText.isEmpty {

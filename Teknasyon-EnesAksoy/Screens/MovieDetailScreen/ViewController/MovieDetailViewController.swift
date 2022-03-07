@@ -12,26 +12,22 @@ import Kingfisher
 class MovieDetailViewController: UIViewController {
     
     // MARK: - Constants
-    
     private let errorKey = "MessageTitle1"
     private let imageBaseUrl = "https://image.tmdb.org/t/p/w500"
     private let placeholderText = "placeholder"
 
     // MARK: - Outlets
-    
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var starCountLabel: UILabel!
-    @IBOutlet weak var movieDescription: UITextView!
-    @IBOutlet weak var movieTitle: UILabel!
-    @IBOutlet weak var posterImage: UIImageView!
+    @IBOutlet private weak var dateLabel: UILabel!
+    @IBOutlet private weak var starCountLabel: UILabel!
+    @IBOutlet private weak var movieDescription: UITextView!
+    @IBOutlet private weak var movieTitle: UILabel!
+    @IBOutlet private weak var posterImage: UIImageView!
     
     // MARK: - Proporties
-    
     private var viewModel: MovieDetailViewModel!
     private var movieDetailResponse: ResultModel?
     
     // MARK: - Life Cycles
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.async {
@@ -42,7 +38,6 @@ class MovieDetailViewController: UIViewController {
     }
     
     // MARK: - Functions
-    
     private func updateView() {
         self.posterImage.kf.indicatorType = .activity
         let urlPoster = URL(string: "\(self.imageBaseUrl)\(self.movieDetailResponse?.backdropPath ?? "")")
@@ -55,7 +50,6 @@ class MovieDetailViewController: UIViewController {
 }
 
 // MARK: - Movie Detail View Model Delegate
-
 extension MovieDetailViewController: MovieDetailViewModelDelegate {
     func updateView(movieDetailResponse: ResultModel?, errorText: String) {
         LoadingView.removeLoadingView()

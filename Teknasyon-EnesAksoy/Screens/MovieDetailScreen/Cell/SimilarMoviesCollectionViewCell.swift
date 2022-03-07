@@ -11,11 +11,9 @@ import UIKit
 class SimilarMoviesCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Constans
-    
     private let imageBaseUrl = "https://image.tmdb.org/t/p/w500"
 
     //MARK: - Outlets
-    
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var posterImage: UIImageView!{
@@ -26,13 +24,11 @@ class SimilarMoviesCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: - Life Cycles
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     //MARK: - Cell Configure
-    
     func cellConfigure(movieTitle: String, date: String, moviePoster: String) {
         let posterUrl = URL(string: "\(self.imageBaseUrl)\(moviePoster)")
         self.posterImage.kf.indicatorType = .activity
@@ -42,7 +38,6 @@ class SimilarMoviesCollectionViewCell: UICollectionViewCell {
     }
     
     //MARK: - Substring Method
-    
     private func substring(x : Int, y : Int, s : String) -> String {
       let start = s.index(s.startIndex, offsetBy: x)
       let end   = s.index(s.startIndex, offsetBy: y)

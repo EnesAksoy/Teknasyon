@@ -11,7 +11,6 @@ import Foundation
 class MovieDetailViewModel: NSObject {
     
     // MARK: - Proporties
-    
     private let dateFormat = "yyyy-MM-dd"
     private let newDateFormat = "dd.MM.yy"
     private let movieDetailEndPoint = "/movie/\(ObjectStore.shared.movieId ?? 0)"
@@ -19,32 +18,34 @@ class MovieDetailViewModel: NSObject {
     private var movieDetailResponse: ResultModel?
     private var error: String = ""
     
-    var delegate: MovieDetailViewModelDelegate?
+    weak var delegate: MovieDetailViewModelDelegate?
     
     // MARK: - Life Cycles
-    
     override init() {
         super.init()
-        self.apiService = APIService()
+        self.apiService = APIService.shared
         self.getMovieDetailData()
     }
     
     // MARK: - Service Call Methods
-    
     private func getMovieDetailData() {
-        apiService.apiToGetData(isResult: false, endPoint: self.movieDetailEndPoint) { [weak self] _, error, responseModel in
+        
+        apiService.getRequest(path: self.movieDetailEndPoint, class: ResultModel.self) { [weak self] response, error in
             guard let self = self else { return }
-            if var response = responseModel, error.isEmpty {
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = self.dateFormat
-                let releaseDate = dateFormatter.date(from: (response.releaseDate ?? "")) ?? Date()
-                dateFormatter.dateFormat = self.newDateFormat
-                let myString = dateFormatter.string(from: releaseDate)
-                response.releaseDate = myString
-                self.movieDetailResponse = response
-                self.delegate?.updateView(movieDetailResponse: self.movieDetailResponse, errorText: self.error)
+            if error == nil {
+                if var response = response {
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = self.dateFormat
+                    let releaseDate = dateFormatter.date(from: (response.releaseDate ?? "")) ?? Date()
+                    dateFormatter.dateFormat = self.newDateFormat
+                    let myString = dateFormatter.string(from: releaseDate)
+                    response.releaseDate = myString
+                    self.movieDetailResponse = response
+                    self.delegate?.updateView(movieDetailResponse: self.movieDetailResponse, errorText: self.error)
+                }
+            } else {
+                self.error = error.debugDescription
             }
-            self.error = error
         }
     }
 }

@@ -7,7 +7,7 @@ target 'Teknasyon-EnesAksoy' do
 
   # Pods for Teknasyon-EnesAksoy
 
-pod 'Alamofire', '~> 4.7.2'
+pod 'Alamofire', '~> 5.1'
 pod 'Kingfisher', '~> 5.0'
 
 end

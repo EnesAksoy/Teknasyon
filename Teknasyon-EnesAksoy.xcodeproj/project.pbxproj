@@ -35,8 +35,8 @@
 		8F21CC2E25D945A70061F17E /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC2D25D945A70061F17E /* MovieDetailViewModel.swift */; };
 		8F21CC3025D945C00061F17E /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC2F25D945C00061F17E /* MovieDetailViewController.xib */; };
 		8F21CC3325D946250061F17E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC3225D946250061F17E /* LoadingView.swift */; };
-		8F21CC4525D948210061F17E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F21CC4425D948210061F17E /* Localizable.strings */; };
 		8F21CC4725D972DA0061F17E /* TeknasyonNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */; };
+		8FBBD0A725E15BC60093C881 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FBBD0A925E15BC60093C881 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,8 +73,8 @@
 		8F21CC2F25D945C00061F17E /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		8F21CC3225D946250061F17E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8F21CC3A25D947410061F17E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		8F21CC4425D948210061F17E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8F21CC4625D972DA0061F17E /* TeknasyonNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeknasyonNavigationItem.swift; sourceTree = "<group>"; };
+		8FBBD0A825E15BC60093C881 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,7 +364,7 @@
 		8F21CC4325D948110061F17E /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				8F21CC4425D948210061F17E /* Localizable.strings */,
+				8FBBD0A925E15BC60093C881 /* Localizable.strings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -439,7 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F21CC3025D945C00061F17E /* MovieDetailViewController.xib in Resources */,
-				8F21CC4525D948210061F17E /* Localizable.strings in Resources */,
+				8FBBD0A725E15BC60093C881 /* Localizable.strings in Resources */,
 				8F21CC1F25D9444C0061F17E /* ListScreen.storyboard in Resources */,
 				8F21CBDE25D93BE10061F17E /* LaunchScreen.storyboard in Resources */,
 				8F21CC0A25D942D50061F17E /* ListTableViewCell.xib in Resources */,
@@ -531,6 +531,14 @@
 				8F21CBDD25D93BE10061F17E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8FBBD0A925E15BC60093C881 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FBBD0A825E15BC60093C881 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
